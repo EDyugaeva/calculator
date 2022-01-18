@@ -8,10 +8,10 @@ import pro.sky.java.course2.calculator.service.CalculateService;
 
 @RestController
 @RequestMapping("/calculator")
-public class FirstController {
+public class Controller {
     private final CalculateService calculateService;
 
-    public FirstController(CalculateService calculateService) {
+    public Controller(CalculateService calculateService) {
         this.calculateService = calculateService;
     }
 
