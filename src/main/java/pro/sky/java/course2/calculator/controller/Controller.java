@@ -45,10 +45,7 @@ public class Controller {
     @GetMapping("/divide")
     public String getDivide(@RequestParam int num1,
                             @RequestParam int num2) {
-        if (num2 != 0) {
-            return (num1 + " / " + num2 + " = " + calculateService.getDivide(num1, num2));
-        } else return "Деление на ноль запрещено";
-
+        return (num1 + " / " + num2 + " = " + calculateService.getDivide(num1, num2));
     }
 
 

@@ -24,7 +24,10 @@ public class CalculateServiceImpl implements CalculateService {
 
     @Override
     public float getDivide(int num1, int num2) {
-            return (float) num1 / num2;
+        if (num2 == 0) {
+            throw new IllegalArgumentException("Деление на 0 запрещено");
+        }
+        return (float) num1 / num2;
     }
 
 }
